@@ -85,10 +85,10 @@ router.delete('/:candidateID', jwtAuthMiddleware, async (req, res)=>{
 })
 
 // let's start voting
-router.get('/vote/:candidateID', jwtAuthMiddleware, async (req, res)=>{
+router.post('/vote/:candidateID', jwtAuthMiddleware, async (req, res)=>{
     // no admin can vote
     // user can only vote once
-    
+    //Parametrised API calls    http://locaIhost:3000/candidate/vote/65d1d02ae04275593a03dc041
     candidateID = req.params.candidateID;
     userId = req.user.id;
 
