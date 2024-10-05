@@ -3,6 +3,7 @@ API Endpoints
 Authentication
 Sign Up
 POST /signup: Sign up a user
+
 Login
 POST /login: Login a user
 Candidates
